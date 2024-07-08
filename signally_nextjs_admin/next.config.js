@@ -4,6 +4,11 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 
 module.exports = withBundleAnalyzer({
   reactStrictMode: true,
+  exportTrailingSlash: true,
+  images: {
+    loader: 'imgix',
+    path: '',
+  },
   eslint: {
     ignoreDuringBuilds: true
   }
